@@ -28,10 +28,10 @@ To use a closure, define a function inside another function and expose it.
       As long as the closures are active, the memory can’t be garbage collected.
 Example : If we are using closure in ten places then unless all the ten processes complete it holds the memory which cause memory leak.
 How to fix this?
-If there come a point in you program where you are done using closure then you need to set closure to null.
+If there come a point in your program where you are done using closure then you need to set closure to null.
     </li>
     <li>
-      Creating a function inside a function leads to duplicity in memory and cause slowing down the application.
+      Creating a function inside a function leads to duplicity in memory and causes slowing down the application.
 How to fix?
 Use closures only when you need privacy otherwise use module pattern to create new objects with shared methods.
     </li>
@@ -91,10 +91,10 @@ This is a built in directive that allows developer to call context of current ob
 <pre>
 <code class="javascript">
 const data = {
-name: "test",
-getName: function() {
-  console.log(this.name);
-}
+  name: "test",
+  getName: function() {
+    console.log(this.name);
+  }
 };
 
 data.getName() // test
