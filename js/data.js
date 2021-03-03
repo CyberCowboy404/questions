@@ -25,8 +25,8 @@ To use a closure, define a function inside another function and expose it.
   answer: `
   <ol>
     <li>
-      As long as the closure are active , the memory can’t be garbage collected.
-example : If we are using closure in ten places then unless all the ten process complete it hold the memory which cause memory leak.
+      As long as the closures are active, the memory can’t be garbage collected.
+Example : If we are using closure in ten places then unless all the ten processes complete it holds the memory which cause memory leak.
 How to fix this?
 If there come a point in you program where you are done using closure then you need to set closure to null.
     </li>
